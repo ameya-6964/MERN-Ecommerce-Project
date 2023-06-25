@@ -15,6 +15,9 @@ main {
   font-weight: 600;
   padding-left: 0.5rem;
 }
+h4 {
+  padding-top: 0.5rem;
+}
 
 .product-title {
   height: 2.5em; /* Set a fixed height */
