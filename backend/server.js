@@ -1,8 +1,8 @@
 import express from "express";
 import dotenv from "dotenv";
-
 import productRoutes from "./routes/productRoutes.js";
 import connectDb from "./config/db.js";
+import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 
 dotenv.config();
 connectDb();
@@ -15,6 +15,8 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/products", productRoutes);
+app.use(notFound);
+app.use(errorHandler);
 
 app.listen(port, () => {
   console.log(`Server Running on ${port}`);
