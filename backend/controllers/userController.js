@@ -11,9 +11,6 @@ const authUser = asyncHandler(async (req, res) => {
 // @desc    Login User
 // @route   POST /api/users/login
 // @access  Public
-const loginUser = asyncHandler(async (req, res) => {
-  res.send("User Logged In");
-});
 
 // @desc    Logout User
 // @route   POST /api/users/login
@@ -80,6 +77,5 @@ export {
   deleteUser,
   getUserById,
   updateUser,
-  loginUser,
   logoutUser,
 };

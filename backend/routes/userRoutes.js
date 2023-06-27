@@ -8,14 +8,13 @@ import {
   deleteUser,
   getUserById,
   updateUser,
-  loginUser,
   logoutUser,
 } from "../controllers/userController.js";
 
 const router = express.Router();
 
 router.route("/").post(registerUser).get(getUsers);
-router.post("/login", loginUser);
+router.post("/login", authUser);
 router.post("/logout", logoutUser);
 router.route("/profile").get(getUserProfile).put(updateUserProfile);
 
