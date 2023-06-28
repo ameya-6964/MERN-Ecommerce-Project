@@ -9,6 +9,11 @@ dotenv.config();
 connectDb();
 const app = express();
 
+// Body Parser Middleware
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 const port = process.env.PORT || 8000;
 
 app.get("/", (req, res) => {
