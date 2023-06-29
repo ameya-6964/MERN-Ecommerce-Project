@@ -20,6 +20,7 @@ const ProductListScreen = () => {
     if (window.confirm("Are you sure")) {
       try {
         await deleteProduct(id);
+        toast.success("Product Deleted Successfully");
         refetch();
       } catch (err) {
         toast.error(err?.data?.message || err.error);
