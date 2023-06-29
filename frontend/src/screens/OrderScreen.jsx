@@ -40,7 +40,7 @@ const OrderScreen = () => {
           type: "resetOptions",
           value: {
             "client-id": paypal.clientId,
-            currency: "INR",
+            currency: "USD",
           },
         });
         paypalDispatch({ type: "setLoadingStatus", value: "pending" });
@@ -218,13 +218,13 @@ const OrderScreen = () => {
                     <Loader />
                   ) : (
                     <div>
-                      <Button
+                      {/* <Button
                         style={{ marginBottom: "10px" }}
                         onClick={onApproveTest}
                       >
                         Test Pay Order
                       </Button>
-
+ */}
                       <div>
                         <PayPalButtons
                           createOrder={createOrder}
