@@ -20,7 +20,7 @@ const ProfileScreen = () => {
   const { userInfo } = useSelector((state) => state.auth);
 
   const { data: orders, isLoading, error } = useGetMyOrdersQuery();
-
+  // eslint-disable-next-line no-unused-vars
   const [updateProfile, { isLoading: loadingUpdateProfile }] =
     useProfileMutation();
 

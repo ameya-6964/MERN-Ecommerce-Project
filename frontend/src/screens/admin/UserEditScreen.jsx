@@ -24,6 +24,7 @@ const UserEditScreen = () => {
     refetch,
   } = useGetUserDetailsQuery(userId);
 
+  // eslint-disable-next-line no-unused-vars
   const [updateUser, { isLoading: loadingUpdate }] = useUpdateUserMutation();
 
   const navigate = useNavigate();
