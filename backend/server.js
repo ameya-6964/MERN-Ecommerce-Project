@@ -23,10 +23,6 @@ app.use(cookieParser());
 
 const port = process.env.PORT || 8000;
 
-app.get("/", (req, res) => {
-  res.send("API is Running...");
-});
-
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/orders", orderRoutes);
@@ -37,7 +33,8 @@ app.get("/api/config/paypal", (req, res) =>
 );
 
 const __dirname = path.resolve();
-app.use(express.static(path.join(__dirname, "/frontend/build")));
+app.use(express.static(path.join(__dirname, "/uploads")));
+
 if (process.env.NODE_ENV === "PRODUCTION") {
   app.use(express.static(path.join(__dirname, "/frontend/build")));
 
