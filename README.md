@@ -1,4 +1,4 @@
-# ProShop eCommerce Platform (v2)
+# ProShop eCommerce Platform 
 
 > eCommerce platform built with the MERN stack & Redux.
 
@@ -88,5 +88,8 @@ Password - 123456
 Email - jane@gmail.com (Customer)
 Password - 123456
 ```
+Paypal Payment Information
 
+PayPal Email - sb-clo2c26467530@personal.example.com
+PayPal Password - Ik)0Styq
 ---
