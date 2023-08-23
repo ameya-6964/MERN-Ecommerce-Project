@@ -1,7 +1,8 @@
 # ProShop eCommerce Platform 
 
 > eCommerce platform built with the MERN stack & Redux.
-> Live Link ===> https://www.proshop-mern.store (Link May Take Some Time To Load Because Backend Is Deployed On Free Tier Cloud Storage)
+
+* Live Link : https://www.proshop-mern.store (Link May Take Some Time To Load Because Backend Is Deployed On Free Tier Cloud Storage)
 
 <img src="./frontend/public/images/screens.png">
 
